@@ -1,3 +1,3 @@
 # projeto-calculadora
 
-HTML, CSS E JS.
+Projeto utilizando HTML, CSS E JS.
