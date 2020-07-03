@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Calculadora - Treino HTML, CSS E JS</title>
+</head>
+<body>
+    <main>
+        <div class="base">
+
+            <div id="visor">
+                
+            </div>
+
+            <div class="teclado">
+                <button class="numeros-operacoes">ON</button>
+                <button class="numeros-operacoes" onclick="limpaVisor()">CE</button>
+                <button class="numeros-operacoes" onclick="apagarUltimoCaracter()">&#8592</button>
+                <button class="numeros-operacoes" id="%" onclick="obterOperacao(this.id)">%</button>
+                <button class="numeros-operacoes" id="7" onclick="obterNumero(this.id)">7</button>
+                <button class="numeros-operacoes" id="8" onclick="obterNumero(this.id)">8</button>
+                <button class="numeros-operacoes" id="9" onclick="obterNumero(this.id)">9</button>
+                <button class="numeros-operacoes" id="/" onclick="obterOperacao(this.id)">/</button>
+                <button class="numeros-operacoes" id="4" onclick="obterNumero(this.id)">4</button>
+                <button class="numeros-operacoes" id="5" onclick="obterNumero(this.id)">5</button>
+                <button class="numeros-operacoes" id="6" onclick="obterNumero(this.id)">6</button>
+                <button class="numeros-operacoes" id="*" onclick="obterOperacao(this.id)">*</button>
+                <button class="numeros-operacoes" id="1" onclick="obterNumero(this.id)">1</button>
+                <button class="numeros-operacoes" id="2" onclick="obterNumero(this.id)">2</button>
+                <button class="numeros-operacoes" id="3" onclick="obterNumero(this.id)">3</button>
+                <button class="numeros-operacoes" id="-" onclick="obterOperacao(this.id)">-</button>
+                <button class="numeros-operacoes" id="0" onclick="obterNumero(this.id)">0</button>
+                <button class="numeros-operacoes" id="." onclick="obterOperacao(this.id)">.</button>
+                <button class="numeros-operacoes" id="=" onclick="calcular()">=</button>
+                <button class="numeros-operacoes" id="+" onclick="obterOperacao(this.id)">+</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Gabriel S. Alves</p>
+
+        <nav>
+            <a href="https://www.linkedin.com/in/gabrielsalves1/"><img src="imagens/linkedin-logo.png" alt="linkedin"></a>
+            <a href="https://github.com/gabrielsalves1?tab=repositories"><img src="imagens/github-logo.png" alt="github"></a>
+        </nav>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
